@@ -1,7 +1,7 @@
 {
-  "name": "configstore",
-  "version": "2.0.0",
-  "description": "Easily load and save config without having to think about where and how",
+  "name": "configstore-plain",
+  "version": "1.0.0",
+  "description": "Easily load and save config without having to think about where and how. Based on https://github.com/yeoman/configstore with additions for storing plain keys containing periods.",
   "keywords": [
     "conf",
     "config",
@@ -16,14 +16,10 @@
     "save"
   ],
   "author": {
-    "name": "Sindre Sorhus",
-    "email": "sindresorhus@gmail.com",
-    "url": "sindresorhus.com"
+    "name": "David Lomas",
+    "email": "dl3@pale-eds.co.uk",
   },
-  "repository": "yeoman/configstore",
-  "scripts": {
-    "test": "xo && mocha"
-  },
+  "repository": "dsl101/configstore-plain",
   "engines": {
     "node": ">=0.10.0"
   },
