@@ -2,6 +2,8 @@
 
 > Easily load and persist config without having to think about where and how
 
+Fork of https://github.com/yeoman/configstore to add new plain key methods (see https://github.com/yeoman/configstore/issues/39)
+
 Config is stored in a JSON file located in `$XDG_CONFIG_HOME` or `~/.config`.<br>
 Example: `~/.config/configstore/some-id.json`
 
