@@ -75,6 +75,10 @@ Store the config at `$CONFIG/package-name/config.json` instead of the default `$
 
 Set an item.
 
+### config.setPlain(key, value)
+
+Set an item (does not turn periods in key into nested object properties).
+
 ### config.set(object)
 
 Set multiple items at once.
@@ -82,6 +86,10 @@ Set multiple items at once.
 ### config.get(key)
 
 Get an item.
+
+### config.getPlain(key, value)
+
+Get an item (does not turn periods in key into nested object properties).
 
 ### config.del(key)
 

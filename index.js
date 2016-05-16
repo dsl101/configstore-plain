@@ -82,6 +82,10 @@ Configstore.prototype.get = function (key) {
 	return dotProp.get(this.all, key);
 };
 
+	Configstore.prototype.getPlain = function (key) {
+		return this.all[key];
+	};
+
 Configstore.prototype.set = function (key, val) {
 	var config = this.all;
 	if (arguments.length === 1) {
@@ -90,6 +94,18 @@ Configstore.prototype.set = function (key, val) {
 		});
 	} else {
 		dotProp.set(config, key, val);
+	}
+	this.all = config;
+};
+
+Configstore.prototype.setPlain = function (key, val) {
+	var config = this.all;
+	if (arguments.length === 1) {
+		Object.keys(key).forEach(function (k) {
+			config[k] = key[k];
+		});
+	} else {
+		config[key] = val;
 	}
 	this.all = config;
 };
