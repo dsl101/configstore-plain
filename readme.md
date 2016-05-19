@@ -7,6 +7,8 @@ Fork of https://github.com/yeoman/configstore to add new plain key methods (see 
 Config is stored in a JSON file located in `$XDG_CONFIG_HOME` or `~/.config`.<br>
 Example: `~/.config/configstore/some-id.json`
 
+See options below to modify storage location.
+
 
 ## Usage
 
@@ -70,6 +72,12 @@ Type: `boolean`<br>
 Default: `false`
 
 Store the config at `$CONFIG/package-name/config.json` instead of the default `$CONFIG/configstore/package-name.json`. This is not recommended as you might end up conflicting with other tools, rendering the "without having to think" idea moot.
+
+##### configFile
+
+Type: `string`<br>
+
+Store the config file at the absolute location instead of the default (see above). Useful if (a) you want full control, (b) if you're using it for storing data other than 'config' data, or (c) to keep things together for a 'portable' installation.
 
 ### config.set(key, value)
 
