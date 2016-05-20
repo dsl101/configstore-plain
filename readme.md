@@ -46,6 +46,10 @@ console.log(conf.get('awesome'));
 
 ## API
 
+Note all functions apart from `get()` and `getPlain()` return the config object, so they can be chained - for example:
+
+`config.clear().set(newContents);`
+
 ### Configstore(packageName, [defaults], [options])
 
 Create a new Configstore instance `config`.
