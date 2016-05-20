@@ -1,6 +1,6 @@
 {
   "name": "configstore-plain",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Easily load and save config without having to think about where and how. Based on https://github.com/yeoman/configstore with additions for storing plain keys containing periods.",
   "keywords": [
     "conf",
